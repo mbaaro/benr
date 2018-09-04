@@ -1,3 +1,30 @@
 page-home {
 
+.login {
+    background: url('../assets/imgs/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* background-size: center;*/
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+   position: relative;
+ background-attachment: fixed;
+}
+.parallax {
+    /* The image used */
+    background-image: url('../assets/imgs/logo.png');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 }
