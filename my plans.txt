@@ -1,0 +1,5 @@
+create menus at the top.
+create a slider for the first row
+create divs for different menu items
+create an FAB  with the different menu items
+Have the menus in different font size(smaller, and type)
