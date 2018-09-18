@@ -56,13 +56,43 @@ var HomePage = /** @class */ (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
+    HomePage.prototype.scroll = function (element) {
+        //scroll to the selected element
+        if (element == 'About') {
+            var yOffset = document.getElementById(element).offsetTop;
+            this.content.scrollTo(0, yOffset, 4000);
+        }
+        else if (element == 'Contact') {
+            var yOffset = document.getElementById(element).offsetTop;
+            this.content.scrollTo(0, yOffset, 4000);
+        }
+        else if (element == 'Prices') {
+            var yOffset = document.getElementById(element).offsetTop;
+            this.content.scrollTo(0, yOffset, 4000);
+        }
+        else if (element == 'Services') {
+            var yOffset = document.getElementById(element).offsetTop;
+            this.content.scrollTo(0, yOffset, 4000);
+        }
+        else if (element == 'Top') {
+            this.content.ScrollToTop(4000);
+        }
+        else if (element == 'Bottom') {
+            this.content.ScrollToTop(4000);
+        }
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Content */]),
+        __metadata("design:type", Object)
+    ], HomePage.prototype, "content", void 0);
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"E:\ionic\projects\benr\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n    <ion-grid>\n\n    	<ion-row>\n\n    	<ion-col> \n\n    	<img src="../assets/imgs/logo.png" length="20px" width="20px">\n\n    	Benr Logo</ion-col>\n\n    	<ion-col>Benr Title</ion-col>	\n\n    	<ion-col>\n\n    	<ion-buttons right>\n\n    	<button ion-button (click)="scrollToElement(\'Services\')">About</button>\n\n    	  <a href="#About"><button ion-button>About</button></a>\n\n        <a href="#Services"><button ion-button>Services</button></a>\n\n        <a href="#Prices"><button ion-button>Prices</button></a>\n\n        <a href="#Contact"><button ion-button> Contact </button></a>\n\n        <a href="#Services" style="color:white">Services</a>\n\n    	</ion-buttons>\n\n    	</ion-col>		\n\n    	</ion-row>\n\n    </ion-grid>\n\n\n\n     \n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content >\n\n<!--Lets create a Foating button at the right of the page-->\n\n<ion-fab  right >\n\n    <button ion-fab large color="danger"><ion-icon name="menu"></ion-icon></button>\n\n    <ion-fab-list>\n\n      <button ion-fab large ><ion-icon name=""></ion-icon>About us</button>\n\n      <button ion-fab class="btn-lg"><ion-icon name=""></ion-icon>Contact us</button>\n\n      <button ion-fab><ion-icon name=""></ion-icon>Share</button>\n\n      <button ion-fab><ion-icon name=""></ion-icon></button>\n\n    </ion-fab-list>\n\n  </ion-fab>\n\n  <ion-grid>\n\n  	<ion-row class="sec1">\n\n  	<ion-col ></ion-col>	\n\n  <ion-col style="width:10px;margin:auto">\n\n  	<ion-slides pager  autoplay="2000" effect="cube" loop="true" >\n\n\n\n\n\n  <ion-slide class="slide1" >\n\n  <h2>Slide1</h2>\n\n<ion-col>hhhhgggggggggggggggggggg</ion-col>\n\n<ion-col></ion-col>\n\n<ion-col>hhhhhhhhhhhhhhhhhhhhh</ion-col>\n\n   <h2>Slide 1</h2><br>\n\n\n\n  	h<br>nnnn<br>mjjjj<br>kkkk<br>\n\n \n\n  </ion-slide >\n\n\n\n  <ion-slide class="slide2" >\n\n\n\n    <h2>Slide 2</h2>\n\n    \n\n    <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n    <!--second slide image -->\n\n  </ion-slide >\n\n\n\n  <ion-slide class="slide3" >\n\n    <h2>Slide 3</h2>\n\n     \n\n     	cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\n\n    ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\n\n    ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n    \n\n    <!--third slide image -->\n\n  </ion-slide>\n\n\n\n</ion-slides>\n\n</ion-col>\n\n<ion-col></ion-col>\n\n  	</ion-row><br>\n\n  	\n\n\n\n  	<ion-row class="sec2">\n\n  		<ion-col>\n\n  	Section 2\n\n  	<br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n  <br><br>\n\n  <br><br>\n\n  		</ion-col>\n\n  	</ion-row><br>\n\n  	<ion-row class="login" id="Services">\n\n  		<ion-col>\n\n  		Section 3\n\n  		<br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n  <br><br>\n\n  <br><br>\n\n  		</ion-col>\n\n  	</ion-row>\n\n  </ion-grid>\n\n\n\n  \n\n</ion-content>\n\n'/*ion-inline-end:"E:\ionic\projects\benr\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"E:\ionic\projects\benr\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n\n    <ion-title>\n\n    <ion-grid>\n\n    	<ion-row>\n\n    	<ion-col> \n\n    	<img src="../assets/imgs/logo.png" length="20px" width="20px">\n\n    	Benr Logo</ion-col>\n\n    	<ion-col>Benr Title</ion-col>	\n\n    	<ion-col>\n\n    	<ion-buttons right small>\n\n    	<button ion-button (click)="scroll(\'About\')">About</button>\n\n    	<button ion-button (click)="scroll(\'Services\')">Services</button>\n\n        <button ion-button (click)="scroll(\'Prices\')">Prices</button>\n\n        <button ion-button (click)="scroll(\'Contact\')"> Contact </button>\n\n        \n\n    	</ion-buttons>\n\n    	</ion-col>		\n\n    	</ion-row>\n\n    </ion-grid>\n\n\n\n     \n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content >\n\n<!--Lets create a Foating button at the right of the page-->\n\n<ion-fab  right >\n\n    <button ion-fab large color="danger"><ion-icon name="menu"></ion-icon></button>\n\n    <ion-fab-list>\n\n      <button ion-fab large ><ion-icon name=""></ion-icon>About us</button>\n\n      <button ion-fab class="btn-lg"><ion-icon name=""></ion-icon>Contact us</button>\n\n      <button ion-fab><ion-icon name=""></ion-icon>Share</button>\n\n      <button ion-fab><ion-icon name=""></ion-icon></button>\n\n    </ion-fab-list>\n\n  </ion-fab>\n\n  <ion-grid>\n\n  	<ion-row class="sec1">\n\n  	<ion-col ></ion-col>	\n\n  <ion-col style="width:10px;margin:auto">\n\n  	<ion-slides pager  autoplay="2000" effect="cube" loop="true" >\n\n\n\n\n\n  <ion-slide class="slide1">\n\n  <h2>Slide1</h2>\n\n<ion-col>hhhhgggggggggggggggggggg</ion-col>\n\n<ion-col></ion-col>\n\n<ion-col>hhhhhhhhhhhhhhhhhhhhh</ion-col>\n\n   <h2>Slide 1</h2><br>\n\n\n\n  	h<br>nnnn<br>mjjjj<br>kkkk<br>\n\n \n\n  </ion-slide >\n\n\n\n  <ion-slide class="slide2" >\n\n\n\n    <h2>Slide 2</h2>\n\n    \n\n    <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n    <!--second slide image -->\n\n  </ion-slide >\n\n\n\n  <ion-slide class="slide3" >\n\n    <h2>Slide 3</h2>\n\n     \n\n     	cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\n\n    ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\n\n    ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n    \n\n    <!--third slide image -->\n\n  </ion-slide>\n\n\n\n</ion-slides>\n\n</ion-col>\n\n<ion-col></ion-col>\n\n  	</ion-row><br>\n\n  	\n\n<ion-row class="sec2" id="About" >\n\n  		<ion-col>\n\n  	Section 2\n\n  	<br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n  <br><br>\n\n  <br><br>\n\n  		</ion-col>\n\n  	</ion-row><br>\n\n\n\n  	<ion-row class="login" id="Services" >\n\n  		<ion-col>\n\n  	Section 2\n\n  	<br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n  <br><br>\n\n  <br><br>\n\n  		</ion-col>\n\n  	</ion-row><br>\n\n  	<ion-row class="login" id="Prices">\n\n  		<ion-col>\n\n  		Section 3\n\n  		<br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n  <br><br>\n\n  <br><br>\n\n  		</ion-col>\n\n  	</ion-row>\n\n  	<ion-row class="login" id="Contact">\n\n  		<ion-col>\n\n  		Section 3\n\n  		<br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n   <br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>\n\n   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>\n\n  <br><br>\n\n  <br><br>\n\n  		</ion-col>\n\n  	</ion-row>\n\n  </ion-grid>\n\n\n\n  \n\n</ion-content>\n\n'/*ion-inline-end:"E:\ionic\projects\benr\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object])
     ], HomePage);
     return HomePage;
+    var _a;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -119,11 +149,11 @@ var AppModule = /** @class */ (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: []
                 })
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */]
@@ -131,7 +161,7 @@ var AppModule = /** @class */ (function () {
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
             ]
         })
     ], AppModule);
@@ -179,7 +209,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\ionic\projects\benr\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"E:\ionic\projects\benr\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());

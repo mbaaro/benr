@@ -8,13 +8,12 @@
     	Benr Logo</ion-col>
     	<ion-col>Benr Title</ion-col>	
     	<ion-col>
-    	<ion-buttons right>
-    	<button ion-button (click)="scrollToElement('Services')">About</button>
-    	  <a href="#About"><button ion-button>About</button></a>
-        <a href="#Services"><button ion-button>Services</button></a>
-        <a href="#Prices"><button ion-button>Prices</button></a>
-        <a href="#Contact"><button ion-button> Contact </button></a>
-        <a href="#Services" style="color:white">Services</a>
+    	<ion-buttons right small>
+    	<button ion-button (click)="scroll('About')">About</button>
+    	<button ion-button (click)="scroll('Services')">Services</button>
+        <button ion-button (click)="scroll('Prices')">Prices</button>
+        <button ion-button (click)="scroll('Contact')"> Contact </button>
+        
     	</ion-buttons>
     	</ion-col>		
     	</ion-row>
@@ -43,7 +42,7 @@
   	<ion-slides pager  autoplay="2000" effect="cube" loop="true" >
 
 
-  <ion-slide class="slide1" >
+  <ion-slide class="slide1">
   <h2>Slide1</h2>
 <ion-col>hhhhgggggggggggggggggggg</ion-col>
 <ion-col></ion-col>
@@ -83,8 +82,7 @@
 <ion-col></ion-col>
   	</ion-row><br>
   	
-
-  	<ion-row class="sec2">
+<ion-row class="sec2" id="About" >
   		<ion-col>
   	Section 2
   	<br>
@@ -97,7 +95,35 @@
   <br><br>
   		</ion-col>
   	</ion-row><br>
-  	<ion-row class="login" id="Services">
+
+  	<ion-row class="login" id="Services" >
+  		<ion-col>
+  	Section 2
+  	<br>
+   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>
+   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>
+   <br>
+   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>
+   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>
+  <br><br>
+  <br><br>
+  		</ion-col>
+  	</ion-row><br>
+  	<ion-row class="login" id="Prices">
+  		<ion-col>
+  		Section 3
+  		<br>
+   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>
+   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>
+   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>
+   <br>
+   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>
+   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>
+  <br><br>
+  <br><br>
+  		</ion-col>
+  	</ion-row>
+  	<ion-row class="login" id="Contact">
   		<ion-col>
   		Section 3
   		<br>
