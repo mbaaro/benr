@@ -25721,6 +25721,14 @@ page-home .sec3 {
   background-attachment: fixed;
 }
 
+page-home .slide-content {
+  font-size: 2em;
+  float: left;
+  width: 30%;
+  font-weight: bold;
+  color: #ffffff;
+}
+
 page-home .slide1 {
   background: url("../assets/imgs/rwara.jpg");
   background-repeat: no-repeat;
@@ -25728,6 +25736,8 @@ page-home .slide1 {
   background-size: contain;
   margin-left: auto;
   margin-right: auto;
+  float: right;
+  width: 70%;
 }
 
 page-home .slide2 {
@@ -25737,6 +25747,8 @@ page-home .slide2 {
   background-size: contain;
   margin-left: auto;
   margin-right: auto;
+  float: right;
+  width: 70%;
 }
 
 page-home .slide3 {
@@ -25746,6 +25758,8 @@ page-home .slide3 {
   background-size: contain;
   margin-left: auto;
   margin-right: auto;
+  float: right;
+  width: 70%;
 }
 
 page-home .parallax {
@@ -25758,4 +25772,67 @@ page-home .parallax {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+page-home .Sheader {
+  /*this is a class for section headers*/
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+page-home .Subheader {
+  /*this is a class for section headers*/
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+page-home .service1 {
+  height: 210pt;
+  width: 210pt;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+page-home .service2 {
+  height: 210pt;
+  width: 210pt;
+  background-color: #83f442;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+page-home .service3 {
+  height: 210pt;
+  width: 210pt;
+  background-color: #e24159;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+page-home .service4 {
+  height: 210pt;
+  width: 210pt;
+  background-color: #161616;
+  color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+page-home .servicecontent {
+  margin: auto;
 }

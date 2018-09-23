@@ -41,6 +41,14 @@ page-home {
    position: relative;
  background-attachment: fixed;
 }
+.slide-content{
+font-size:2em;
+float:left;
+width:30%;
+font-weight:bold;
+color:#ffffff;
+
+}
 .slide1{
 	background: url('../assets/imgs/rwara.jpg');
 	 background-repeat: no-repeat;  
@@ -48,9 +56,11 @@ page-home {
     background-size: contain;
    margin-left: auto;
     margin-right: auto;
-
-    
+    float:right;
+    width:70%;
+  
 }
+
 .slide2{
 	background: url('../assets/imgs/cctv.png');
 	  background-repeat: no-repeat;  
@@ -58,6 +68,9 @@ page-home {
     background-size: contain;
    margin-left: auto;
     margin-right: auto;
+     float:right;
+    width:70%;
+  
 }
 .slide3{
 background: url('../assets/imgs/jose.jpg');
@@ -66,6 +79,9 @@ background: url('../assets/imgs/jose.jpg');
     background-size: contain;
    margin-left: auto;
     margin-right: auto;
+     float:right;
+    width:70%;
+  
    }
 .parallax {
     /* The image used */
@@ -79,6 +95,64 @@ background: url('../assets/imgs/jose.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.Sheader{
+	/*this is a class for section headers*/
+font-weight:bold;
+font-size:2em;
+text-align:center;
+padding-bottom: 15px;
+padding-top: 10px;
+}
+.Subheader{
+	/*this is a class for section headers*/
+font-weight:bold;
+font-size:1em;
+text-align:center;
+padding-bottom: 8px;
+padding-top: 8px;
+}
+.service1 {
+  height: 210pt;
+  width: 210pt;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align:center;
+  padding:20px;
+}
+.service2 {
+  height: 210pt;
+  width: 210pt;
+  background-color: #83f442;
+  border-radius: 50%;
+  display: inline-block;
+  text-align:center;
+  padding:20px;
+}
+.service3 {
+  height: 210pt;
+  width: 210pt;
+  background-color: #e24159;
+  border-radius: 50%;
+  display: inline-block;
+  text-align:center;
+  padding:20px;
+}
+.service4 {
+  height: 210pt;
+  width: 210pt;
+  background-color: #161616;
+  color:#ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align:center;
+  padding:20px;
+
+}
+.servicecontent{
+	margin:auto;
+
 }
 
 
