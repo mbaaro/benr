@@ -1,6 +1,7 @@
 import { Component,ViewChild } from '@angular/core';
 import { NavController,Content } from 'ionic-angular';
 import {Slides} from 'ionic-angular';
+import {FormBuilder,Validators,FormGroup} from '@angular/forms';
 
 
 
@@ -11,9 +12,19 @@ import {Slides} from 'ionic-angular';
 export class HomePage {
 //lets add the viewchild to help us scroll using Content
 @ViewChild(Content) content:any;
-@ViewChild('myslides') slides:any;
+@ViewChild('myslides') slides:Slides;
 
-  constructor(public navCtrl: NavController) {
+public myform:FormGroup;
+public name:any;
+public email:any;
+public message:any;
+
+  constructor(public navCtrl: NavController, public formBuilder:FormBuilder) {
+this.myform=this.formBuilder.group({
+	name:['',Validators.required],
+	email:['',Validators.required],
+	message:['',Validators.required]
+});
 
   }
 
@@ -58,10 +69,9 @@ this.slides.slideTo(2, 10);
   else if(service=="service3"){
     this.slides.slideTo(3, 100);
   }
-
-
-
 }
-
+contactform(){
+	console.log("Form submited ");
+}
 
 }

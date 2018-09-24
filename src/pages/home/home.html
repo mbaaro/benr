@@ -24,7 +24,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content >
+<ion-content  class="sec2">
 						<!--Lets create a Foating button at the right of the page-->
 				
 						<ion-fab  right style="padding-top:20px" >
@@ -38,52 +38,7 @@
 						  </ion-fab>
   <ion-grid>	
   	<ion-row class="sec1">
-  <!--
-  	<ion-slides pager  autoplay="2000" effect="cube" loop="true" style="width:10%">
-
-
-  <ion-slide  >
-  <ion-col col-3 left>hfhfhfhfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
-  fggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</ion-col>
-  <ion-col col-9 align="right" class="slider1"  >jfjfjfj</ion-col>
- <ion-col col-3>
-     <h2>INTERNET CONNECTIVITY</h2>
-  </ion-col>
   
-   <ion-col col-5 class="slide1">
-     
-   </ion-col>
-
-
- 
-  </ion-slide >
-
-  <ion-slide class="slide2" >
-
-    <h2>Slide 2</h2>
-    
-    <br>
-   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br><br>
-   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>
-    
-  </ion-slide >
-
-  <ion-slide class="slide3" >
-    <h2>Slide 3</h2>
-     
-     	cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-    ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-    ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-   <br>
-   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>
-   <br>
-   hhhh<br>hhhh<br>nnnn<br>mjjjj<br>kkkk<br>
-    
-
-  </ion-slide>
-
-</ion-slides>
--->
 <ion-col col-12>
   <ion-slides pager  autoplay="2000" effect="cube" loop="true" style="width:100%">
 
@@ -137,9 +92,10 @@
 
 
   	<ion-row class="login" id="Services" >
-  	<ion-col>
-  		<div class="Sheader" >Our Services</div>
-  		<ion-col >
+  	
+  	<ion-col col-12><hr><div class="Sheader">Our Services</div></ion-col>
+
+    		<ion-col >
   		<div class="service1">
   			<h1><b>Service1</b></h1><hr>
   			<div  style="font-size:18px">fff</div>
@@ -165,56 +121,74 @@
   			</div>
   		</ion-col>
 
-  	</ion-col>
-  	
+  	  	
   	</ion-row>
   	<ion-row  id="Prices" >
+<ion-col col-12><hr><div class="Sheader">Our Prices</div></ion-col>
 <ion-col col-3>
-<button ion-button (click)="gotoslide('genprices')" >Gen info</button><br> 
-<button ion-button (click)="gotoslide('service1')" >Service 1</button><br>
-rdddde</ion-col>
-
-<ion-slides >
-  <ion-slide>
-   slide1S
-  </ion-slide>
-</ion-slides>
-
-  	<!--
-<ion-col col-2 class="price-buttons">
-<button ion-button (click)="gotoslide('genprices')" >Gen info</button><br>
-<button ion-button (click)="gotoslide('service1')" >Service 1</button><br>
-      <button ion-button (click)="gotoslide('service2')" >Service 2</button><br>
-    </ion-col>
-    <ion-col>
-<ion-slides #myslides>
-  <ion-slide>
-    <h2>Best Prices in town</h2>
-    hhhhhh<br> hhhhhh<br> hhhhhh<br> hhhhhh<br> hhhhhh<br> hhhhhh<br> hhhhhh<br> hhhhhh<br>
-  </ion-slide>
-   <ion-slide >
-    <h2>Service 1 Prices</h2>
-  </ion-slide>
-   <ion-slide>
-<h2>Service 2 Prices</h2>
-  </ion-slide>
-  <ion-slide>
-<h2>Service 3 Prices</h2>
-  </ion-slide>
-</ion-slides>
-
-
+<button ion-button round large (click)="gotoslide('genprices')" >Our Prices</button><br> 
+<button ion-button round large (click)="gotoslide('service1')" >Internet Installation</button><br>
+<button ion-button round large (click)="gotoslide('service2')" >Repair & Maintenance</button><br>
+<button ion-button round large (click)="gotoslide('service3')" >Computer Sales</button><br>
 </ion-col>
-  	</ion-row>
-  	<ion-row class="" id="Contact">
-  		
-  		<ion-col><div class="Sheader" >Reach us</div>
-  		<ion-col col-3>
+<ion-col col-9>
+<ion-slides #myslides>
+  <ion-slide >
+  <div class="generalpricesdiv"><h2>ssss<br>ssss<br>ssss<br>ssss<br>ssss<br>ssss<br>ssss<br>ssss<br>ssss<br>ssss<br>ssss<br></h2>
+  slide0</div>
+  
+  </ion-slide>
+  <ion-slide padding>
+<ion-col> <div class="internetdiv1"><h3>Package 1</h3><hr></div> </ion-col>
+<ion-col><div class="internetdiv1"><h3>Package 2</h3><hr></div></ion-col>
+<ion-col> <div class="internetdiv1"><h3>Package 3</h3><hr></div> </ion-col>
+<ion-col><div class="internetdiv1"><h3>Package 4</h3><hr></div></ion-col>
+ 
+  
+  
+  </ion-slide>
+  <ion-slide>
+ 
+  </ion-slide>
+  <ion-slide>
+  slide4
+  </ion-slide>
+</ion-slides>
+</ion-col>
+</ion-row>
+ 
+  	<ion-row  id="Contact" style="padding:0pt">
+  		<ion-col col-12><hr><div class="Sheader">Reach Us</div></ion-col>
+
+   		<ion-col col-4 >
+   		<div class="contactbuttons" >
+   			<button ion-button><ion-icon name="call"></ion-icon></button>
+   			<button ion-button><ion-icon name="chatboxes"></ion-icon></button>
+   			<button ion-button><ion-icon name="mail"></ion-icon></button>
+   			<button ion-button><ion-icon name="logo-twitter"></ion-icon></button>
+   			<button ion-button><ion-icon name="logo-facebook"></ion-icon></button>
+            <br><br> <h2> Or Leave message</h2>
+   		</div>
+  			<form [formGroup]="myform" (ngSubmit)="contactform()" >
   			
+  		<ion-item>
+		<ion-label floating >Name:</ion-label>
+		<ion-input type="text" formControlName="name" ></ion-input>
+		</ion-item>
+		<ion-item>
+		<ion-label floating >Email:</ion-label>
+		<ion-input type="text" formControlName="email" ></ion-input>
+		</ion-item>
+		<ion-item>
+		<ion-label floating >Message:</ion-label>
+		<ion-textarea type="text" rows="5" formControlName="message" ></ion-textarea>
+		</ion-item>
+
+  			<br><br><button ion-button  round type="submit" [disabled]="!myform.valid">Leave Message</button>
+  			</form>
   		</ion-col>
-       <ion-col ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8181902520714!2d37.07415731402547!3d0.01463136441556405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1787f6478462240d%3A0xd0649408e2a0723e!2sMetallic+Solutions!5e0!3m2!1sen!2ske!4v1537726064955" width="60%" height="300" frameborder="0" style="border:0;float:right" allowfullscreen></iframe></ion-col>
-  		</ion-col>
--->
+       <ion-col col-8><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8181902520714!2d37.07415731402547!3d0.01463136441556405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1787f6478462240d%3A0xd0649408e2a0723e!2sMetallic+Solutions!5e0!3m2!1sen!2ske!4v1537726064955" width="70%" height="450" frameborder="0" style="border:0;float:right" allowfullscreen></iframe></ion-col>
+
 
 
   	</ion-row>

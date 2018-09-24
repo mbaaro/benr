@@ -25846,3 +25846,28 @@ page-home .service4 {
 page-home .servicecontent {
   margin: auto;
 }
+
+page-home .contactbuttons {
+  height: 30pt;
+  width: 100%;
+  background-color: #83f442;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+page-home .internetdiv1 {
+  height: 250pt;
+  width: 150pt;
+  background-color: #84f332;
+  text-align: center;
+  display: inline-block;
+}
+
+page-home .generalpricesdiv {
+  height: 250pt;
+  width: 100%;
+  background-color: #84f332;
+  text-align: center;
+  display: inline-block;
+}
