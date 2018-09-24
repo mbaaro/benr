@@ -25729,6 +25729,16 @@ page-home .slide-content {
   color: #ffffff;
 }
 
+page-home .price-buttons {
+  float: left;
+  width: 30%;
+}
+
+page-home .price-content {
+  float: right;
+  width: 70%;
+}
+
 page-home .slide1 {
   background: url("../assets/imgs/rwara.jpg");
   background-repeat: no-repeat;

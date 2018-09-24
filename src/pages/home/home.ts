@@ -1,5 +1,7 @@
 import { Component,ViewChild } from '@angular/core';
 import { NavController,Content } from 'ionic-angular';
+import {Slides} from 'ionic-angular';
+
 
 
 @Component({
@@ -9,6 +11,7 @@ import { NavController,Content } from 'ionic-angular';
 export class HomePage {
 //lets add the viewchild to help us scroll using Content
 @ViewChild(Content) content:any;
+@ViewChild('myslides') slides:any;
 
   constructor(public navCtrl: NavController) {
 
@@ -40,5 +43,25 @@ this.content.ScrollToTop(4000);
 this.content.ScrollToTop(4000);
   }
 }
+
+gotoslide(service){
+  //moving to the service for the clicked button
+  if(service=="genprices"){
+ this.slides.slideTo(0, 100);
+  }
+  else if(service=="service1"){
+this.slides.slideTo(1, 10);
+  }
+  else if(service=="service2"){
+this.slides.slideTo(2, 10);
+  }
+  else if(service=="service3"){
+    this.slides.slideTo(3, 100);
+  }
+
+
+
+}
+
 
 }
